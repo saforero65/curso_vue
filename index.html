@@ -10,7 +10,11 @@
 </head>
 
 <body>
-    <div id="app">{{ message}} {{ sum}}</div>
+    <div id="app">
+        {{ message}} {{ sum}}
+        <p>Computed reversed message: "{{ reversedMessage }}"</p>
+        <p>{{ calculateSum(sum,5) }}</p>
+    </div>
 
     <script src="js/vue.js"></script>
     <script src="js/app.js"></script>
