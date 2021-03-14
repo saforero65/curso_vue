@@ -14,6 +14,13 @@
         <ul>
             <li v-for="person in people">{{person}}</li>
         </ul>
+        <ul>
+            <li v-for="(person,index) in people">
+                {{index}}-{{person}}
+
+                <span v-if="index == people.length - 1 ">ESTE ES EL ULTIMO ELMENTO</span>
+            </li>
+        </ul>
     </div>
 
     <script src="js/vue.js "></script>
