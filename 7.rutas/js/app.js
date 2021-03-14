@@ -1,3 +1,6 @@
+const PageNotFound = {
+    template: '#PageNotFound'
+};
 const router = new VueRouter({
     base: "7.rutas",
     routes: [{
@@ -7,11 +10,19 @@ const router = new VueRouter({
         {
             path: '/list_programing',
             component: ListsPrograming
+        },
+        {
+            path: '*',
+            component: PageNotFound
         }
+
     ]
 })
 const app = new Vue({
-    router,
     el: '#app',
+    router,
+    mounted() {
+        console.log(this.$route)
+    },
 
 });
