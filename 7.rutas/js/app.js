@@ -24,5 +24,7 @@ const app = new Vue({
     mounted() {
         console.log(this.$route)
     },
-
+    data: {
+        img_pixa: 'https://cdn.pixabay.com/photo/2021/03/08/02/38/man-6077947_960_720.jpg',
+    },
 });
