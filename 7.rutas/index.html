@@ -21,7 +21,17 @@
             <router-link to="/otro_link">otro enlace</router-link>
 
             <modal-bootsrap>
+                <div slot="header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Hola Vue title</h5>
+                </div>
+
                 <p>esto es un contenido para nuestro modal</p>
+                <div slot="footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar todo
+            </button>
+                    <button type="button" class="btn btn-primary">Ok enterndido</button>
+                </div>
             </modal-bootsrap>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
